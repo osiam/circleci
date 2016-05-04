@@ -4,6 +4,11 @@
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <servers>
         <server>
+            <id>releases</id>
+            <username>${env.BINTRAY_USER}</username>
+            <password>${env.BINTRAY_KEY}</password>
+        </server>
+        <server>
             <id>snapshots</id>
             <username>${env.BINTRAY_USER}</username>
             <password>${env.BINTRAY_KEY}</password>
